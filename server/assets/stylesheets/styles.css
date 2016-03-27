@@ -1,6 +1,13 @@
 .form--item {
   margin: 1em 0;
 }
+.form--item.company {
+  border: 1px solid red;
+}
+.form--item.company .logo {
+  display: block;
+  height: 100px;
+}
 h1 {
   color: deeppink;
 }

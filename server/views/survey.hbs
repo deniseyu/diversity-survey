@@ -1,0 +1,38 @@
+<h1>On a scale of 1-5, please indicate to what extent you think each company values diversity.</h1>
+<p>
+  Please consider diversity along the lines of <strong>hiring</strong> diverse employees, making effort to
+  <strong>retain</strong> employees of diverse backgrounds, and <strong>supporting community initiatives</strong> that promote diversity in tech.
+</p>
+<ul>
+  <li>5: I believe that this company greatly values diversity and makes significant effort to actively pursue
+    diversity in hiring, retention, and community involvement.
+  </li>
+  <li>4: I believe that this company feels positive towards diversity and makes some effort to promote diversity in
+    hiring, retention, and community involvement.
+  </li>
+  <li>3: I believe that this company feels neutral towards diversity but to my knowledge, has not demonstrated
+    active support towards promoting diversity in hiring, retention, and community involvement.
+  </li>
+  <li>2: I believe that this company feels negatively towards diversity and to my knowledge, has not demonstrated
+    support towards promoting diversity in hiring, retention, and community involvement.</li>
+  <li>1: I do not believe that this company values diversity.</li>
+  <li>N/A: I do not know anything about this company and/or its attitude towards diversity.</li>
+</ul>
+
+<form action="/submit/results" method="POST">
+  {{#each companies}}
+    <div class="form--item company">
+      <img src="http://i.imgur.com/Jvh1OQm.jpg" class="logo"/>
+      <label>{{name}}</label>
+      <div class="form--item__radio">
+        <input type="radio" name="{{name}}" value="5">5
+        <input type="radio" name="{{name}}" value="4">4
+        <input type="radio" name="{{name}}" value="3">3
+        <input type="radio" name="{{name}}" value="2">2
+        <input type="radio" name="{{name}}" value="1">1
+        <input type="radio" name="{{name}}" value="na">N/A
+      </div>
+    </div>
+  {{/each}}
+  <input type="submit" value="Submit">
+</form>
