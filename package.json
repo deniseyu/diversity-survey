@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js"
+    "start": "grunt start"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +13,7 @@
     "express": "^4.13.4",
     "express-handlebars": "^3.0.0",
     "grunt-cli": "^1.1.0",
+    "lodash": "^4.6.1",
     "mongodb": "^2.1.11"
   },
   "devDependencies": {
